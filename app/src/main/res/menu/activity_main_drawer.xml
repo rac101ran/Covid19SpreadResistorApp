@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_security_black_24dp"
+            android:title="Shield Strength" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="Diagnosis Call" />
+
+
+    </group>
+
+        <group android:checkableBehavior="single"
+            android:id="@+id/grpid2"
+            >
+
+            <item
+                android:id="@+id/hotspotnearpc"
+                android:icon="@drawable/ic_group_add_black_24dp"
+                android:title="Hotspots near You"
+                />
+
+
+            <item
+                android:id="@+id/hotspotfragment"
+                android:icon="@drawable/ic_near_me_black_24dp"
+                android:title="Hotspots"/>
+
+        </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/three"
+        >
+        <item
+            android:id="@+id/help"
+            android:title="Help"
+            android:icon="@drawable/ic_live_help_black_24dp"
+            />
+
+    </group>
+
+</menu>

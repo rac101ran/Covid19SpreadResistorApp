@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e4c9"
+        tools:context=".Homepage">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/isdamagedlayoutcontainerid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="6dp">
+
+
+            <LinearLayout
+                android:id="@+id/layout_cyclecount_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDamagedTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#801336"
+                    android:fontFamily="@font/fontone"
+                    android:gravity="center"
+                    android:text="Age Group"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radiogrpid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checkedButton="@id/rbAge1"
+                    android:orientation="vertical"
+                    android:tooltipText="isDamage">
+
+                    <RadioButton
+                        android:id="@+id/rbAge1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:text="Below 12" />
+
+                    <RadioButton
+                        android:id="@+id/rbAge2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:text="12 - 19 years old" />
+                    <RadioButton
+                        android:id="@+id/rbAge3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:text="20 - 40 years old" />
+                    <RadioButton
+                        android:id="@+id/rbAge4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:text="40 Above" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/diseasedid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@id/isdamagedlayoutcontainerid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="6dp">
+
+
+            <LinearLayout
+                android:id="@+id/newLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDamagedTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#801336"
+                    android:fontFamily="@font/fontone"
+                    android:gravity="center"
+                    android:text="Any of the following problems ?"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radiogrpid2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checkedButton="@id/rbAge1"
+                    android:orientation="vertical"
+                    android:tooltipText="isDamage">
+
+                    <CheckBox
+                        android:id="@+id/cb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:text="Hyper Tension" />
+
+                    <CheckBox
+                        android:id="@+id/cb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:text="Heart Problems" />
+                    <CheckBox
+                        android:id="@+id/cb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:text="Respiratory Diseases" />
+                    <CheckBox
+                        android:id="@+id/cb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"
+                        android:text="Shortness of breadth" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:background="@drawable/buttonsave"
+            android:text="Save"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

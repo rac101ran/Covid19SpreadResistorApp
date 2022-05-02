@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "813768704607",
+    "firebase_url": "https://covid-19-spread-resistor.firebaseio.com",
+    "project_id": "covid-19-spread-resistor",
+    "storage_bucket": "covid-19-spread-resistor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813768704607:android:e9600165b90a4882fa91ea",
+        "android_client_info": {
+          "package_name": "com.example.covid_19spreadresistor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813768704607-kie618nsdpafd7fk3in8feavnrgp70fh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.covid_19spreadresistor",
+            "certificate_hash": "b8598b43ba3203385689d47eb8cb748e56293689"
+          }
+        },
+        {
+          "client_id": "813768704607-ve3glh896sjt6dltqlkuvsorf4scehj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcYAH731Kjr5YsZHGUyrfXNqU1YTvtjRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813768704607-ve3glh896sjt6dltqlkuvsorf4scehj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffcdd2"
+    tools:context=".Welcomepage">
+
+<!---->
+    <Button
+        android:id="@+id/bid"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:background="@drawable/signup_pagebutton"
+        android:clickable="true"
+        android:onClick="signup"
+        android:text="Need A nEW ACCOUNT"
+        android:textColor="#fff"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <Button
+        android:id="@+id/b2id"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:background="@drawable/signup_pagebutton"
+        android:clickable="true"
+        android:onClick="login"
+        android:text="Existing User ?"
+        android:textColor="#fff"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <TextView
+        android:id="@+id/covidtitle"
+        android:layout_width="371dp"
+        android:layout_height="131dp"
+        android:text="COVID-19 SPREAD RESISTOR"
+        android:textAlignment="center"
+        android:textColor="#801336"
+        android:textSize="35dp"
+        android:fontFamily="@font/allcntrifont"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/covidtitle"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/corona" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
